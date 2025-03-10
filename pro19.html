@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Loging page</title>
+    <style>
+        body{
+            background-color: rgb(8, 193, 218);
+            background-image:repeating-linear-gradient(rgb(211, 85, 134) , rgb(97, 132, 197),rgb(23, 121, 88),rgb(145, 136, 18))
+        }
+        #d1{
+            background-color:rgb(14, 224, 196);
+            font-size:x-large;
+            font-family:'Times New Roman', Times, serif;
+            font-display: block;
+            border: 7px dotted rgb(103, 11, 250);
+            size-adjust: 20px;
+            text-align: center;
+            height: 500px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <form id="d1">
+        <h1> Loging page</h1>
+         <label>Username :</label>
+        <input type="text" size="30" id="Username"/><br/><br/>
+        <label>Password :</label>
+        <input type="text" size="30" id="Password"/><br/><br/>
+        <input type="submit" />
+        <input type="reset" />
+    </form>
+    <script>
+        function valid()
+        {
+            let User=document.getElementById('Username').value;
+            let Pass=document.getElementById('Password').value;
+            let cmpass=document.getElementById('cmpass').value;
+            if(user=="")
+        {
+            alert("please enter same value");
+            return false;
+        }
+        else if(Pass!=cmpass)
+        {
+            alert("please enter the value");
+            return false;
+        }
+        if(Pass.length<6 || Pass.length>10)
+        {
+            alert("Password mustbe between into 6 to 10");
+            return false;
+        }
+        return true;
+        }
+
+    </script>
+</body>
+</html>
