@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Prime or Not</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            background-image:repeating-radial-gradient(rgb(114, 152, 255), rgb(236, 89, 121));
+            font-family: fantasy;
+            font-size: x-large;
+        }
+    </style>
+    <script>
+        let n = prompt("enter number");
+        let count = 0;
+        if(n <= 1){
+            document.write("its not a prime number");
+
+        }
+        else{
+            for(let i = 1; i <=n; i++){
+                if(n % i === 0){
+                    document.write("your nummber=" + n % 1 + "<br>");
+                    count++
+                }
+            }
+        }
+        if(count > 2)
+        {
+            document.write("this is not prime number=" + n );
+        }
+        else{
+            document.write("this is prime number=" + n);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
