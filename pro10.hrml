@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 0, 212);
+            background-image: linear-gradient(rgb(35, 13, 233),rgb(221, 15, 77));
+            font-family: fantasy;
+            font-size: x-large;
+            font-display: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+    let a="diya"
+    let b=a.split('').reverse().join('');
+    document.write(b);      
+
+    </script>
+</body>
+</html>
